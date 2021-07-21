@@ -32,8 +32,9 @@
             
             function onPlayerReady(event) {
                 var Videos = 2;
+                var RandomVideo = Math.random() * Videos; 
                 setTimeout(() => {
-                    player.playVideoAt(Math.random() * Videos);
+                    player.playVideoAt(RandomVideo);
                     console.log("go");
                 }, 600);
             }
