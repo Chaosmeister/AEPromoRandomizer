@@ -39,13 +39,8 @@
             }
             
             function onPlayerReady(event) {
-                event.target.mute();
                 event.target.setShuffle(true);
                 event.target.playVideoAt(0);
-                setTimeout(() => {
-                    console.log("unmute");
-                    event.target.unMute();
-                }, 500);
             }
         </script>
     </body>
