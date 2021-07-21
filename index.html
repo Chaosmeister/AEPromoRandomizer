@@ -9,7 +9,6 @@
         <div id="player"></div>
         
         <script>
-            //var Videos = 199;
             var Playlist = 'PLMC9KNkIncKseYxDN2niH6glGRWKsLtde';
             
             var tag = document.createElement('script');
@@ -27,20 +26,18 @@
                     },
                     playerVars:
                     {
-                        listType:'playlist',
-                        list: Playlist,
-                        autoplay: 1,
-                        controls: 0,
-                        playsinline: 0,
-                        showinfo: 0
+                        'listType':'playlist',
+                        'list': Playlist,
+                        'autoplay': 1,
+                        'controls': 0,
+                        'playsinline': 0,
+                        'showinfo': 0
                     }
                 });
             }
             
             function onPlayerReady(event) {
                 event.target.setShuffle(true);
-                //var RandomVideo = Math.floor(Math.random() * Videos);
-                //event.target.playVideoAt(RandomVideo);
                 event.target.playVideoAt(0);
             }
         </script>
