@@ -31,14 +31,18 @@
                         autoplay: 1,
                         controls: 0,
                         showinfo: 0,
-                        rel: 0
+                        rel: 0,
+                        modestbranding: 1,
+                        playsinline: 1
                     }
                 });
             }
             
             function onPlayerReady(event) {
+                event.target.mute();
                 event.target.setShuffle(true);
                 event.target.playVideoAt(0);
+                event.target.unmute();
             }
         </script>
     </body>
