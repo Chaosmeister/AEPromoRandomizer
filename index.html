@@ -28,10 +28,9 @@
             }
             
             function onPlayerReady(event) {
-                num = _.random(0, 2);
-                
+                var Videos = 2;
                 setTimeout(() => {
-                    player.playVideoAt(num);
+                    player.playVideoAt(Math.random() * Videos);
                 }, 600);
             }
         </script>
