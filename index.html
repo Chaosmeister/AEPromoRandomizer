@@ -33,9 +33,7 @@
             function onPlayerReady(event) {
                 var Videos = 2;
                 var RandomVideo = Math.floor(Math.random() * Videos);
-                setTimeout(() => {
-                    event.target.playVideoAt(RandomVideo);
-                }, 600);
+                event.target.playVideoAt(RandomVideo);
             }
         </script>
     </body>
