@@ -42,7 +42,10 @@
                 event.target.mute();
                 event.target.setShuffle(true);
                 event.target.playVideoAt(0);
-                event.target.unMute();
+                setTimeout(() => {
+                    console.log("unmute");
+                    event.target.unMute();
+                }, 500);
             }
         </script>
     </body>
