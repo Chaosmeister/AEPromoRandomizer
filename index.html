@@ -34,7 +34,7 @@
                 var Videos = 2;
                 var RandomVideo = Math.floor(Math.random() * Videos);
                 setTimeout(() => {
-                    player.playVideoAt(RandomVideo);
+                    event.target.playVideoAt(RandomVideo);
                 }, 600);
             }
         </script>
