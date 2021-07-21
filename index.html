@@ -9,6 +9,9 @@
         <div id="player"></div>
         
         <script>
+            var Videos = 199;
+            var Playlist = 'PLMC9KNkIncKseYxDN2niH6glGRWKsLtde';
+            
             var tag = document.createElement('script');
             
             tag.src = "https://www.youtube.com/iframe_api";
@@ -25,13 +28,12 @@
                     playerVars:
                     {
                         listType:'playlist',
-                        list: 'PLxah0-gDPl5qF56PXDv5aG_K0KiwYz3hi'
+                        list: Playlist
                     }
                 });
             }
             
             function onPlayerReady(event) {
-                var Videos = 2;
                 var RandomVideo = Math.floor(Math.random() * Videos);
                 event.target.playVideoAt(RandomVideo);
             }
