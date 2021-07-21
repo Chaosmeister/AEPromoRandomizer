@@ -9,7 +9,7 @@
         <div id="player"></div>
         
         <script>
-            var Videos = 199;
+            //var Videos = 199;
             var Playlist = 'PLMC9KNkIncKseYxDN2niH6glGRWKsLtde';
             
             var tag = document.createElement('script');
@@ -39,8 +39,9 @@
             
             function onPlayerReady(event) {
                 event.target.setShuffle(true);
-                var RandomVideo = Math.floor(Math.random() * Videos);
-                event.target.playVideoAt(RandomVideo);
+                //var RandomVideo = Math.floor(Math.random() * Videos);
+                //event.target.playVideoAt(RandomVideo);
+                event.target.playVideo();
             }
         </script>
     </body>
