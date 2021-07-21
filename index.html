@@ -34,6 +34,7 @@
             }
             
             function onPlayerReady(event) {
+                event.target.setShuffle(true);
                 var RandomVideo = Math.floor(Math.random() * Videos);
                 event.target.playVideoAt(RandomVideo);
                 event.target.playVideo();
